@@ -14,7 +14,12 @@ module.exports = {
 	theme: {
 		// Extend the default Tailwind theme.
 		extend: {
-
+			colors: {
+				'dark': '#2C3639',
+				'light': '#DCD7C9',
+				'secondary': '#3F4E4F',
+				'accent': '#E68333',
+			},
 		},
 	},
 	corePlugins: {
