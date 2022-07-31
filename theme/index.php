@@ -17,6 +17,7 @@ get_header();
 
 	<main id="primary">
 		<?php get_template_part('template-parts/layout/hero-content') ?>
+		<?php get_template_part('template-parts/layout/work-content') ?>
 	</main><!-- #main -->
 
 <?php

@@ -21,8 +21,8 @@ module.exports = {
       'xl': '1.25rem',
       '2xl': '1.5rem',
       '3xl': '1.875rem',
-      '4xl': '2.25rem',
-      '5xl': ['7.5rem', '0.9'],
+      '4xl': '4.1rem',
+      '5xl': ['6.8rem', '0.9'],
       '6xl': ['8rem', '0.9'],
       '7xl': ['13rem', '0.9'],
     },
@@ -42,6 +42,9 @@ module.exports = {
 				'body': 'Neue Montreal',
 				'bodybold': 'Neue Montreal-Bold'
 			},
+			borderRadius: {
+				'4xl': '32px'
+			}
 		},
 	},
 	corePlugins: {

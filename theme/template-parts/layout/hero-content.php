@@ -15,7 +15,7 @@
 
 
     <div class="w-full md:w-6/12">
-      <image class="w-full rounded-tr-3xl mt-8 pb-12" src="<?php echo get_template_directory_uri() . '/images/me.jpg'; ?>"></image>
+      <image class="w-full rounded-tr-4xl mt-8 pb-12" src="<?php echo get_template_directory_uri() . '/images/me.jpg'; ?>"></image>
     </div>
   </div>
  
