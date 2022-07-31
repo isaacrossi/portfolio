@@ -10,7 +10,7 @@
           <li class="text-xl lg:text-2xl text-light font-body pb-2 pt-2 border-b"><a href="#" >Blog</a></li>
         </ul>
       </nav>
-      <h1 class="absolute bottom-0 text-5xl md:text-6xl lg:text-7xl text-light text-center md:text-left w-full mx-auto uppercase tracking-tight font-heading tracking-wide absolute bottom-0 left-0">Frontend Developer</h1>
+      <h1 class="absolute bottom-0 text-5xl md:text-6xl lg:text-7xl text-light text-center md:text-left w-full mx-auto uppercase font-heading tracking-wide absolute bottom-0 left-0">Frontend Developer</h1>
     </div>
 
 
