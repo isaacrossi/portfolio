@@ -12,13 +12,35 @@ module.exports = {
 		'./theme/theme.json',
 	],
 	theme: {
-		// Extend the default Tailwind theme.
+		fontSize: {
+      'xs': '.75rem',
+      'sm': '.875rem',
+      'tiny': '.875rem',
+      'base': '1rem',
+      'lg': '1.125rem',
+      'xl': '1.25rem',
+      '2xl': '1.5rem',
+      '3xl': '1.875rem',
+      '4xl': '2.25rem',
+      '5xl': ['7.5rem', '0.9'],
+      '6xl': ['8rem', '0.9'],
+      '7xl': ['13rem', '0.9'],
+    },
+		container: {
+      center: true,
+    },
+		// Extend the default Tailwind theme
 		extend: {
 			colors: {
 				'dark': '#2C3639',
 				'light': '#DCD7C9',
 				'secondary': '#3F4E4F',
 				'accent': '#E68333',
+			},
+			fontFamily: {
+				'heading': 'Heliuk',
+				'body': 'Neue Montreal',
+				'bodybold': 'Neue Montreal-Bold'
 			},
 		},
 	},

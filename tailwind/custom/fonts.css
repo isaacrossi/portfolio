@@ -3,3 +3,27 @@
  *
  * These will be added immediately before Tailwind’s `base` layer.
  */
+
+@font-face {
+  font-family: 'Heliuk';
+  src: url('../theme/fonts/Heliuk.otf');
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "Neue Montreal";
+  src: url("../theme/fonts/NeueMontreal-Regular.otf");
+  font-weight: normal; 
+}
+
+@font-face {
+  font-family: "Neue Montreal-Bold";
+  src: url("../theme/fonts/NeueMontreal-Bold.otf");
+  font-weight: bold; 
+}
+
+
+
+
+
+
