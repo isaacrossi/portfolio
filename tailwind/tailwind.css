@@ -4,6 +4,10 @@
  * before this comment.
  */
 
+/* import the css for our blog slider */
+@import 'keen-slider/keen-slider.min.css';
+
+
 /**
  * This injects custom `@font-face` rules.
  */

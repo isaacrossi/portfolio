@@ -22,9 +22,9 @@ module.exports = {
       '2xl': '1.5rem',
       '3xl': ['2.625rem', '1.3'],
       '4xl': '4.1rem',
-      '5xl': ['6.8rem', '1.15'],
-      '6xl': ['8rem', '0.9'],
-      '7xl': ['13rem', '0.9'],
+      '5xl': ['6.8rem', '1'],
+      '6xl': ['8rem', '1'],
+      '7xl': ['13rem', '1'],
     },
 		container: {
       center: true,

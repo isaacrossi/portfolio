@@ -19,8 +19,8 @@ get_header();
 		<?php get_template_part('template-parts/layout/hero-content') ?>
 		<?php get_template_part('template-parts/layout/work-content') ?>
 		<?php get_template_part('template-parts/layout/about-content') ?>
+		<?php get_template_part('template-parts/layout/blog-content') ?>
 	</main><!-- #main -->
 
 <?php
-get_sidebar();
 get_footer();

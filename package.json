@@ -44,5 +44,8 @@
 		"prod": "npm run production",
 		"zip": "node node_scripts/zip.js portfolio",
 		"bundle": "run-s production zip"
+	},
+	"dependencies": {
+		"keen-slider": "^6.7.0"
 	}
 }
