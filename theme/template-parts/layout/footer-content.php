@@ -16,9 +16,9 @@
 			<p class="font-body text-sm md:text-base border-b border-light py-2">Frontend Developer, based in Sydney. Ready for work. All rights reserved.</p>
 		</div>
 		<div class="flex flex-row mt-2 absolute top-5 right-4 md:relative">
-			<img class="w-5 md:w-6 mr-6" src="<?php echo get_template_directory_uri() . '/images/git.svg'; ?>">
-			<img class="w-5 md:w-6 mr-6" src="<?php echo get_template_directory_uri() . '/images/twitter.svg'; ?>">
-			<img class="w-5 md:w-6" src="<?php echo get_template_directory_uri() . '/images/email.svg'; ?>">
+			<img class="w-5 mr-6" src="<?php echo get_template_directory_uri() . '/images/git.svg'; ?>">
+			<img class="w-5 mr-6" src="<?php echo get_template_directory_uri() . '/images/twitter.svg'; ?>">
+			<img class="w-5" src="<?php echo get_template_directory_uri() . '/images/email.svg'; ?>">
 		</div>
 	</div>
 </footer><!-- #colophon -->
