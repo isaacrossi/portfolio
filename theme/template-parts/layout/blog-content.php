@@ -4,27 +4,32 @@
       <h2 class="font-heading text-4xl md:text-5xl tracking-wide uppercase tracking-wide text-dark">Blog</h2>
     </div>
   </div>
+
   <div id="my-keen-slider" class="keen-slider cursor-grabbing">
-    <div class="keen-slider__slide number-slide1 w-5/12">
-      <img class="rounded-tr-4xl" src="<?php echo get_template_directory_uri() . '/images/blog.jpg'; ?>">
-      <p class="text-base text-dark md:text-xl border-b border-dark mt-6 pb-2 font-body">CMS</p>
-      <p class="text-xl text-dark md:text-2xl border-b py-2 font-bodybold border-dark">What is a headless CMS and how to choose the right one?</p>
-    </div>
-    <div class="keen-slider__slide number-slide2">
-      <img class="rounded-tr-4xl" src="<?php echo get_template_directory_uri() . '/images/blog.jpg'; ?>">
-      <p class="text-base text-dark md:text-xl border-b border-dark mt-6 pb-2 font-body">CMS</p>
-      <p class="text-xl text-dark md:text-2xl border-b py-2 font-bodybold border-dark">What is a headless CMS and how to choose the right one?</p>
-    </div>
-    <div class="keen-slider__slide number-slide3">
-      <img class="rounded-tr-4xl" src="<?php echo get_template_directory_uri() . '/images/blog.jpg'; ?>">
-      <p class="text-base text-dark md:text-xl border-b border-dark mt-6 pb-2 font-body">CMS</p>
-      <p class="text-xl text-dark md:text-2xl border-b py-2 font-bodybold border-dark">What is a headless CMS and how to choose the right one?</p>
-    </div>
-    <div class="keen-slider__slide number-slide4">
-      <img class="rounded-tr-4xl" src="<?php echo get_template_directory_uri() . '/images/blog.jpg'; ?>">
-      <p class="text-base text-dark md:text-xl border-b border-dark mt-6 pb-2 font-body">CMS</p>
-      <p class="text-xl text-dark md:text-2xl border-b py-2 font-bodybold border-dark">What is a headless CMS and how to choose the right one?</p>
-    </div>
+      <?php
+          // organise our options into a data object
+        $args = array(
+          'posts_per_page' => 1,
+          'orderby' => 'date',
+        );
+
+        $count = 1;
+
+        // a variable with our query and options
+        $query = new WP_Query( $args );
+        // do a loop with our new query code
+        if ($query->have_posts()): while ($query->have_posts()): $query->the_post()
+      ?>
+        <div class="keen-slider__slide number-slide<?php echo $count; ?> w-5/12">
+          <img class="rounded-tr-4xl" src="<?php the_field("image"); ?>">
+          <p class="text-base text-dark md:text-xl border-b border-dark mt-6 pb-2 font-body"><?php the_category(', '); ?></p>
+          <p class="text-xl text-dark md:text-2xl border-b py-2 font-bodybold border-dark"><?php the_title() ?></p>
+        </div>
+        
+      <?php 
+      $count++;
+      endwhile; endif; 
+      ?>
   </div>
 
   <div class="px-4 md:px-8 lg:px-16">
