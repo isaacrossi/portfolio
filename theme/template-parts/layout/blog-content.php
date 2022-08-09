@@ -9,9 +9,16 @@
       <?php
           // organise our options into a data object
         $args = array(
-          'posts_per_page' => 1,
+          'posts_per_page' => 6,
           'orderby' => 'date',
-        );
+          'tax_query'      => array(
+            array(
+                'taxonomy'  => 'post_tag',
+                'field'     => 'slug',
+                'terms'     => 'blog'
+            )
+          )
+        ) ;
 
         $count = 1;
 
@@ -20,12 +27,15 @@
         // do a loop with our new query code
         if ($query->have_posts()): while ($query->have_posts()): $query->the_post()
       ?>
+
+      <a href="<?php the_permalink();?>">
         <div class="keen-slider__slide number-slide<?php echo $count; ?> w-5/12">
           <img class="rounded-tr-4xl" src="<?php the_field("image"); ?>">
           <p class="text-base text-dark md:text-xl border-b border-dark mt-6 pb-2 font-body"><?php the_category(', '); ?></p>
           <p class="text-xl text-dark md:text-2xl border-b py-2 font-bodybold border-dark"><?php the_title() ?></p>
-        </div>
-        
+        </div>         
+      </a>
+           
       <?php 
       $count++;
       endwhile; endif; 
