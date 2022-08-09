@@ -11,9 +11,9 @@
       // do a loop with our new query code 
       if ($query->have_posts()): while ($query->have_posts()): $query->the_post(); ?>
 
-        <h2 class="font-heading text-4xl md:text-5xl tracking-wide uppercase tracking-wide text-light"><?php the_title(); ?></h2>
+        <h2 class="font-heading text-5xl md:text-6xl tracking-wide uppercase tracking-wide text-light md:mt-1"><?php the_title(); ?></h2>
       
-        <p class="text-light font-body text-2xl md:text-3xl md:w-9/12 w-full">
+        <p class="text-light font-body text-2xl md:text-4xl md:w-9/12 w-full mt-2 md:mt-0">
           <?php the_field('paragraph'); ?>
         </p>
 

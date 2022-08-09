@@ -20,11 +20,11 @@ module.exports = {
       'lg': '1.125rem',
       'xl': '1.25rem',
       '2xl': '1.5rem',
-      '3xl': ['2.625rem', '1.3'],
-      '4xl': '4.1rem',
-      '5xl': ['6.8rem', '1'],
-      '6xl': ['8rem', '1'],
-      '7xl': ['13rem', '1'],
+      '3xl': ['1.8rem', '0.6'],
+      '4xl': ['2.625rem', '1.1'], //48
+      '5xl': ['4.25rem', '1'], //67
+      '6xl': ['6.875rem', '1'], //109
+      '7xl': ['11.125rem', '1'], //177
     },
 		container: {
       center: true,
@@ -38,7 +38,7 @@ module.exports = {
 				'accent': '#E68333',
 			},
 			fontFamily: {
-				'heading': 'Heliuk',
+				'heading': 'Right Grotesk-TallBold',
 				'body': 'Neue Montreal',
 				'bodybold': 'Neue Montreal-Bold'
 			},

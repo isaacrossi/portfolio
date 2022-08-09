@@ -5,9 +5,9 @@
  */
 
 @font-face {
-  font-family: 'Heliuk';
-  src: url('../theme/fonts/Heliuk.otf');
-  font-weight: normal;
+  font-family: 'Right Grotesk-TallBold';
+  src: url('../theme/fonts/RightGrotesk-TallBold.otf');
+  font-weight: bold;
 }
 
 @font-face {

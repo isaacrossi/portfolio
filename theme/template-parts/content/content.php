@@ -9,58 +9,45 @@
 
 ?>
 
-<article class="px-4 md:px-8 lg:px-16" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<div class="container">
+<article class="bg-light text-dark" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
 		<header>
-			<div>
-				<p><?php the_category(', '); ?></p>
-				<p><?php the_field("date")?></p>
-			</div>
-			<img src="<?php the_field("image"); ?>">
-			<h1><?php the_title(); ?></h1>
+			<img class="w-full max-h-80" src="<?php the_field("image"); ?>">
+      <div class="container px-4 md:px-8 lg:px-16 mt-20">
+        <div class="w-full text-base tracking-wide font-body uppercase flex justify-between border-b border-dark pb-2">
+          <p><?php the_category(', '); ?></p>
+          <p><?php the_field("date")?></p>
+        </div>
+        <span class="block w-full border-b border-dark pb-2">
+          <h1 class="w-9/12 font-heading tracking-wide text-5xl pt-6 "><?php the_title(); ?></h1>
+        </span>
+      </div>
 		</header>
 
-		<div class="entry-content">
-			<p><?php the_field("content")?></p>
-		</div>
-	</div>
-
-	<div id="my-keen-slider" class="keen-slider cursor-grabbing">
+		<div class="entry-content mt-12 pb-24 font-body">
       <?php
-          // organise our options into a data object
-        $args = array(
-          'posts_per_page' => 6,
-          'orderby' => 'date',
-          'tax_query'      => array(
+      the_content(
+        sprintf(
+          wp_kses(
+            /* translators: %s: Name of current post. Only visible to screen readers */
+            __( 'Continue reading<span> "%s"</span>', 'portfolio' ),
             array(
-                'taxonomy'  => 'post_tag',
-                'field'     => 'slug',
-                'terms'     => 'blog'
+              'span' => array(
+                'class' => array(),
+              ),
             )
-          )
-        ) ;
+          ),
+          wp_kses_post( get_the_title() )
+        )
+      );
 
-        $count = 1;
-
-        // a variable with our query and options
-        $query = new WP_Query( $args );
-        // do a loop with our new query code
-        if ($query->have_posts()): while ($query->have_posts()): $query->the_post()
+      wp_link_pages(
+        array(
+          'before' => '<div>' . esc_html__( 'Pages:', 'portfolio' ),
+          'after'  => '</div>',
+        )
+      );
       ?>
-
-      <a href="<?php the_permalink();?>">
-        <div class="keen-slider__slide number-slide<?php echo $count; ?> w-5/12">
-          <img class="rounded-tr-4xl" src="<?php the_field("image"); ?>">
-          <p class="text-base text-dark md:text-xl border-b border-dark mt-6 pb-2 font-body"><?php the_category(', '); ?></p>
-          <p class="text-xl text-dark md:text-2xl border-b py-2 font-bodybold border-dark"><?php the_title() ?></p>
-        </div>         
-      </a>
-           
-      <?php 
-      $count++;
-      endwhile; endif; 
-      ?>
-  </div>
+		</div>
 
   <?php get_template_part('template-parts/layout/blog-content') ?>
 	

@@ -10,12 +10,12 @@
           <li class="text-xl lg:text-2xl text-light font-body pb-2 pt-2 border-b"><a href="#" >Blog</a></li>
         </ul>
       </nav>
-      <h1 class="absolute bottom-0 text-5xl md:text-6xl lg:text-7xl text-light text-center md:text-left w-full mx-auto uppercase font-heading tracking-wide absolute bottom-0 left-0">Frontend Developer</h1>
+      <h1 class="absolute text-5xl sm:text-6xl md:text-6xl lg:text-7xl text-light text-center md:text-left w-full mx-auto uppercase font-heading tracking-wide absolute bottom-20 left-0">Frontend Developer</h1>
     </div>
 
 
     <div class="w-full md:w-6/12">
-      <image class="w-full rounded-tr-4xl mt-8 pb-12" src="<?php echo get_template_directory_uri() . '/images/me.jpg'; ?>"></image>
+      <image class="w-full rounded-tr-4xl mt-8 pb-14" src="<?php echo get_template_directory_uri() . '/images/me.jpg'; ?>"></image>
     </div>
   </div>
  
