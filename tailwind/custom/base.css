@@ -14,3 +14,21 @@
 body {
 	@apply bg-background font-sans text-foreground;
 }
+
+.entry-content h2 {
+	font-family: "Right Grotesk-TallBold";
+	font-size: 67.77px;
+	color: #2C3639;
+	margin-top: 40px;
+	margin-bottom: 24px;
+	letter-spacing: 0.025em;
+}
+
+
+@media(max-width: 768px) {
+	.entry-content h2 {
+		font-size: 42px;
+		margin-top: 48px;
+		margin-bottom: 24px;
+	}
+}

@@ -1,7 +1,7 @@
 <section class="bg-light pt-10 pb-14 md:pt-20 md:pb-24">
   <div class="px-4 md:px-8 lg:px-16">
     <div class="container">
-      <h2 class="font-heading text-5xl md:text-6xl tracking-wide uppercase tracking-wide text-dark">Blog</h2>
+      <h2 class="font-heading text-5xl md:text-6xl tracking-wide uppercase tracking-wide text-dark leading-3.5 mb-3 md:mb-8">Blog</h2>
     </div>
   </div>
 
