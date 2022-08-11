@@ -81,9 +81,17 @@
 
     <div class="px-4 md:px-8 lg:px-16">
       <div class="container flex flex-row justify-end">
-        <button class="text-left px-4 py-4 mt-9 font-bodybold font-dark flex flex-row justify-between w-1/3 md:w-1/4 lg:w-1/6 bg-accent rounded-tr-4xl">View<br>all posts<span class="self-end rotate-45">↑</span></button>
+        <a href="<?php echo site_url('/localhost/posts'); ?>" class="text-left px-4 py-4 mt-9 font-bodybold font-dark flex flex-row justify-between w-1/3 md:w-1/4 lg:w-1/6 bg-accent rounded-tr-4xl">View<br>all posts<span class="self-end rotate-45">↑</span></a>
       </div>
     </div>
+    
+    <?php
+    $categories = get_categories();
+    foreach($categories as $category) {
+    echo '<div class="col-md-4"><a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></div>';
+    }
+    ?>
+
 
   </section>
 
