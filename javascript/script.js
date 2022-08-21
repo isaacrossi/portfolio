@@ -5,8 +5,10 @@
  *
  * For esbuild documentation, please see:
  * https://esbuild.github.io/
+ * 
  */
 
+//keen slider
 var slider = new KeenSlider("#my-keen-slider", {
   loop: true,
   mode: "free",
@@ -23,3 +25,20 @@ var slider = new KeenSlider("#my-keen-slider", {
     },
   }  
 })
+
+const filterPosts = document.querySelector('p.filter-posts')
+const arrow = filterPosts.querySelector("span")
+const categories = document.querySelector("div.categories")
+
+filterPosts.addEventListener("click", function() {
+  if (categories.classList.contains("hidden")) {
+    arrow.style.transform = "rotate(180deg)"
+    categories.classList.remove("hidden")
+  } else {
+    categories.classList.add("hidden")
+    arrow.style.transform = "rotate(0deg)"
+  }
+})
+
+
+

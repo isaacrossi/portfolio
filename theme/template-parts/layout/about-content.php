@@ -5,7 +5,7 @@
       <?php
       $args = array(
         'posts_per_page' => 1,
-        'category_name' => 'bio'
+        'category_name' => 'About'
       );
       $query = new WP_Query( $args );
       // do a loop with our new query code 

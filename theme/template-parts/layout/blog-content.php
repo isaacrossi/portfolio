@@ -11,13 +11,14 @@
         $args = array(
           'posts_per_page' => 6,
           'orderby' => 'date',
-          'tax_query'      => array(
-            array(
-                'taxonomy'  => 'post_tag',
-                'field'     => 'slug',
-                'terms'     => 'blog'
-            )
-          )
+          'category_name' => 'blog'
+          // 'tax_query'      => array(
+          //   array(
+          //       // 'taxonomy'  => 'post_category',
+          //       'field'     => 'name',
+          //       'terms'     => 'cms'
+          //   )
+          // )
         ) ;
 
         $count = 1;
@@ -31,7 +32,7 @@
       <a href="<?php the_permalink();?>">
         <div class="keen-slider__slide number-slide<?php echo $count; ?> w-5/12">
           <img class="rounded-tr-4xl" src="<?php the_field("image"); ?>">
-          <p class="text-base text-dark md:text-xl border-b border-dark mt-6 pb-2 font-body"><?php the_category(', '); ?></p>
+          <p class="text-base text-dark md:text-xl border-b border-dark mt-6 pb-2 font-body"><?php the_tags(' '); ?></p>
           <p class="text-xl text-dark md:text-2xl border-b py-2 font-bodybold border-dark"><?php the_title() ?></p>
         </div>         
       </a>
@@ -44,7 +45,7 @@
 
   <div class="px-4 md:px-8 lg:px-16">
     <div class="container flex flex-row justify-end">
-      <button class="text-left px-4 py-4 mt-9 font-bodybold font-dark flex flex-row justify-between w-1/3 md:w-1/4 lg:w-1/6 bg-accent rounded-tr-4xl">View<br>all posts<span class="self-end rotate-45">↑</span></button>
+      <a href="<?php echo site_url('/localhost/posts'); ?>" class="text-left px-4 py-4 mt-9 font-bodybold font-dark flex flex-row justify-between w-1/3 md:w-1/4 lg:w-1/6 bg-accent rounded-tr-4xl">View<br>all posts<span class="self-end rotate-45">↑</span></a>
     </div>
   </div>
 

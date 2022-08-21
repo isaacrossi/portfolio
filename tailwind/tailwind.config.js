@@ -51,7 +51,10 @@ module.exports = {
 				'2.5': '0.7',
 				'3': '0.8',
 				'3.5': '0.9',
-      }
+      },
+			width: {
+        'fit-content': 'fit-content',
+      },
 		},
 	},
 	corePlugins: {

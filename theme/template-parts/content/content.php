@@ -15,11 +15,11 @@
     <img class="w-full max-h-80" src="<?php the_field("image"); ?>">
     <div class="container px-4 md:px-8 lg:px-16 mt-20">
       <div class="w-full text-sm md:text-base tracking-wide font-body uppercase flex justify-between border-b border-dark pb-2">
-        <p><?php the_category(', '); ?></p>
+        <p><?php the_tags(''); ?></p>
         <p><?php the_field("date")?></p>
       </div>
       <span class="block w-full border-b border-dark pb-4">
-        <h1 class="w-full lg:w-9/12 font-heading tracking-wide text-5xl md:text-6xl leading-3"><?php the_title(); ?></h1>
+        <h1 class="w-full lg:w-9/12 font-heading text-5xl md:text-6xl leading-3"><?php the_title(); ?></h1>
       </span>
     </div>
   </header>
@@ -58,25 +58,31 @@
     </div>
 
     <div id="my-keen-slider" class="keen-slider cursor-grabbing">
-      <?php
+      
+        <?php
 
         $count = 1;
 
-        $related = get_posts( array( 'category__in' => wp_get_post_categories($post->ID), 'numberposts' => 5, 'post__not_in' => array($post->ID) ) );
-        if( $related ) foreach( $related as $post ) {
-        setup_postdata($post); ?>
+        // $related = get_posts( array( 'category__in' => wp_get_post_tags($post->ID), 'numberposts' => 5, 'post__not_in' => array($post->ID) ) );
+        // if( $related ) foreach( $related as $post ) {
+        // setup_postdata($post); 
+
+        
+        
+        ?>
 
         <a href="<?php the_permalink();?>">
           <div class="keen-slider__slide number-slide<?php echo $count; ?> w-5/12">
             <img class="rounded-tr-4xl" src="<?php the_field("image"); ?>">
-            <p class="text-sm text-dark md:text-base border-b border-dark mt-6 pb-2 font-body"><?php the_category(', '); ?></p>
+            <p class="text-sm text-dark md:text-base border-b border-dark mt-6 pb-2 font-body"><?php the_tags(''); ?></p>
             <p class="text-l text-dark md:text-xl border-b py-2 font-bodybold border-dark"><?php the_title() ?></p>
           </div>         
         </a>
             
-        <?php }
-        $count++;
-        wp_reset_postdata(); ?>
+        <?php
+          $count++;
+          wp_reset_postdata(); 
+        ?>
     </div>
 
     <div class="px-4 md:px-8 lg:px-16">
@@ -84,15 +90,6 @@
         <a href="<?php echo site_url('/localhost/posts'); ?>" class="text-left px-4 py-4 mt-9 font-bodybold font-dark flex flex-row justify-between w-1/3 md:w-1/4 lg:w-1/6 bg-accent rounded-tr-4xl">View<br>all posts<span class="self-end rotate-45">↑</span></a>
       </div>
     </div>
-    
-    <?php
-    $categories = get_categories();
-    foreach($categories as $category) {
-    echo '<div class="col-md-4"><a href="' . get_category_link($category->term_id) . '">' . $category->name . '</a></div>';
-    }
-    ?>
-
-
   </section>
 
 </article><!-- #post-<?php the_ID(); ?> -->
