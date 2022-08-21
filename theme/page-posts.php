@@ -24,7 +24,7 @@ get_template_part( 'template-parts/layout/header', 'content' );
 				<div class="border-b border-dark w-fit-content">
 					<h1 class="font-heading text-dark text-6xl border-b border-dark inline-block leading-none pb-2">All Blog Posts</h1>
 					<div class="py-2">
-						<p class="filter-posts flex justify-between cursor-pointer font-body w-full">Topics<span class="font-bold">˅</span></p>
+						<p class="filter-posts flex justify-between cursor-pointer font-body w-full">Topics<span class="font-bold transition-transform">˅</span></p>
 					</div>
 				</div>
 				<div class="categories hidden bg-dark text-light font-body w-2/12 p-2">
