@@ -7,7 +7,7 @@
  * @package portfolio
  */
 
-get_header();
+get_template_part( 'template-parts/layout/header', 'content' );
 ?>
 
 	<main id="primary">
