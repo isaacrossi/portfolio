@@ -24,7 +24,6 @@ body {
 	letter-spacing: 0.025em;
 }
 
-
 @media(max-width: 768px) {
 	.entry-content h2 {
 		font-size: 42px;
