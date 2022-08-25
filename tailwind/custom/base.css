@@ -24,6 +24,10 @@ body {
 	letter-spacing: 0.025em;
 }
 
+.blog-posts:nth-child(3n) {
+	margin-right: 0px;
+}
+
 @media(max-width: 768px) {
 	.entry-content h2 {
 		font-size: 42px;

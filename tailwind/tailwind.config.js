@@ -21,7 +21,7 @@ module.exports = {
       'xl': '1.25rem',
       '2xl': '1.5rem',
       '3xl': ['1.8rem'],
-      '4xl': ['2.625rem', '1.2'], //48
+      '4xl': ['2.625rem', '1.3'], //48
       '5xl': ['4.25rem'], //67
       '6xl': ['6.875rem'], //109
       '7xl': ['11.125rem', '0.7'], //177
@@ -53,6 +53,9 @@ module.exports = {
 				'3.5': '0.9',
       },
 			width: {
+        'fit-content': 'fit-content',
+      },
+			height: {
         'fit-content': 'fit-content',
       },
 		},

@@ -13,7 +13,7 @@
 
         <h2 class="font-heading text-5xl md:text-6xl tracking-wide uppercase tracking-wide text-light md:mt-1 leading-none md:leading-2 mb-1 md:mb-0"><?php the_title(); ?></h2>
       
-        <p class="text-light font-body text-2xl md:text-4xl md:w-9/12 w-full md:mt-0">
+        <p class="text-light font-body text-2xl md:text-4xl md:w-9/12 w-full md:mt-0 leading-normal">
           <?php the_field('paragraph'); ?>
         </p>
 
