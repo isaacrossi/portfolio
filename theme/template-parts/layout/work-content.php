@@ -1,4 +1,4 @@
-<section class="bg-light px-4 md:px-8 lg:px-16 pt-10 pb-14 md:pt-20 md:pb-24">
+<section class="bg-light px-4 md:px-8 lg:px-16 pt-10 pb-14 md:pt-20 md:pb-24" id="work">
 
   <div class="container bg-light flex flex-col md:flex-row justify-between md:items-start items-stretch">
     <h2 class="font-heading text-5xl md:text-6xl tracking-wide uppercase text-dark leading-none md:leading-1 mb-2 md:mb-0">Work</h2>

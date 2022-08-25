@@ -1,4 +1,4 @@
-<section class="bg-secondary px-4 md:px-8 lg:px-16 pt-10 pb-14 md:pt-20 md:pb-24">
+<section class="bg-secondary px-4 md:px-8 lg:px-16 pt-10 pb-14 md:pt-20 md:pb-24" id="about">
 
   <div class="container flex flex-col md:flex-row justify-between">
 
