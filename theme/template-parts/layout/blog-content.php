@@ -5,7 +5,7 @@
     </div>
   </div>
 
-  <div id="my-keen-slider" class="keen-slider cursor-grabbing">
+  <div id="my-keen-slider" class="keen-slider grabbable">
       <?php
           // organise our options into a data object
         $args = array(
@@ -31,11 +31,15 @@
 
       <a href="<?php the_permalink();?>">
         <div class="keen-slider__slide number-slide<?php echo $count; ?> w-5/12">
-          <img class="relative rounded-tr-4xl" src="<?php the_field("image"); ?>">
-          <div class="overlay absolute top-0 left-0 right-0 bottom-0 bg-gray-800 opacity-75 w-full h-full z-10 rounded-tr-4xl"><span class="flex items-center h-full justify-center font-bodybold text-light text-3xl">Live Site<span class="rotate-45 ml-2">↑</span></span>
+          <div class="relative project-card">
+            <img class="rounded-tr-4xl" src="<?php the_field("image"); ?>">
+            <div class="overlay absolute top-0 left-0 right-0 bottom-0 bg-gray-800 opacity-75 w-full h-full z-10 rounded-tr-4xl"><span class="flex items-center h-full justify-center font-bodybold text-light text-3xl">View<span class="rotate-45 ml-2">↑</span></span>
+            </div>
           </div>
-          <p class="text-base text-dark md:text-xl border-b border-dark mt-6 pb-2 font-body"><?php the_tags(' '); ?></p>
-          <p class="text-xl text-dark md:text-2xl border-b py-2 font-bodybold border-dark"><?php the_title() ?></p>
+          <div class="blog-preview-text">
+            <p class="text-base text-dark md:text-xl border-b border-dark mt-6 pb-2 font-body"><?php the_tags(' '); ?></p>
+            <p class="text-xl text-dark md:text-2xl border-b py-2 font-bodybold border-dark"><?php the_title() ?></p>
+          </div>
         </div>         
       </a>
            
