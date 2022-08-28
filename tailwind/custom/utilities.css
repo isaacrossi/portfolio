@@ -21,11 +21,20 @@
 
 .nav-arrow {
   opacity: 0;
-  transition: opacity 0.2s ease-in;
+  transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 li:hover .nav-arrow {
   opacity: 1;
+}
+
+.overlay {
+	opacity: 0;
+	transition: opacity 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.project-card:hover .overlay {
+	opacity: 0.80;
 }
 
 @media(max-width: 768px) {
