@@ -15,8 +15,8 @@
     <img class="w-full max-h-80" src="<?php the_field("image"); ?>">
     <div class="container px-4 md:px-8 lg:px-16 mt-20">
       <div class="w-full text-sm md:text-base tracking-wide font-body uppercase flex justify-between border-b border-dark pb-2">
-        <p class="font-heading text-3xl tracking-wide"><?php the_tags(''); ?></p>
-        <p class="font-heading text-3xl tracking-wide"><?php the_field("date")?></p>
+        <p class="font-body text-base tracking-wide"><?php the_tags(''); ?></p>
+        <p class="font-body text-base tracking-wide"><?php the_field("date")?></p>
       </div>
       <span class="block w-full border-b border-dark pb-4">
         <h1 class="w-full lg:w-9/12 font-heading text-5xl md:text-6xl leading-3"><?php the_title(); ?></h1>

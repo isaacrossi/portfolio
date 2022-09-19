@@ -28,7 +28,7 @@ get_template_part( 'template-parts/layout/header', 'content' );
               foreach($categories as $tag) {
               echo '<div class="col-md-4"><a href="' . get_category_link($tag->term_id) . '">' . $tag->name . '</a></div>';
               }
-              ?>
+            ?>
         </div>
 
         <div class="flex flex-wrap flex-col md:flex-row mt-12">

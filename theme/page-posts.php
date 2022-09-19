@@ -28,12 +28,12 @@ get_template_part( 'template-parts/layout/header', 'content' );
 					</div>
 				</div>
 				<div class="categories absolute hidden bg-dark text-light font-body w-fit-content p-2 z-10">
-						<?php
-							$categories = get_tags();
-							foreach($categories as $tag) {
-							echo '<div class="col-md-4"><a href="' . get_category_link($tag->term_id) . '">' . $tag->name . '</a></div>';
-							}
-							?>
+					<?php
+						$categories = get_tags();
+						foreach($categories as $tag) {
+						echo '<div class="col-md-4"><a href="' . get_category_link($tag->term_id) . '">' . $tag->name . '</a></div>';
+						}
+        	?>
 				</div>
 
 				<div class="flex flex-col md:flex-row mt-12">

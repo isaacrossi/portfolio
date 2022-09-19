@@ -16,9 +16,9 @@
 			<p class="font-body text-xs md:text-sm border-b border-light py-2">Frontend Developer, based in Sydney. Ready for work. All rights reserved.</p>
 		</div>
 		<div class="flex flex-row absolute mt-2 top-5 right-4 md:static h-fit-content">
-			<img class="w-4 md:w-5 mr-6" src="<?php echo get_template_directory_uri() . '/images/git.svg'; ?>">
-			<img class="w-4 md:w-5 mr-6" src="<?php echo get_template_directory_uri() . '/images/twitter.svg'; ?>">
-			<img class="w-4 md:w-5" src="<?php echo get_template_directory_uri() . '/images/email.svg'; ?>">
+			<a href="https://github.com/isaacrossi"><img class="w-4 md:w-5 mr-6" src="<?php echo get_template_directory_uri() . '/images/git.svg'; ?>"></a>
+			<a href="https://twitter.com/isaac__rossi"><img class="w-4 md:w-5 mr-6" src="<?php echo get_template_directory_uri() . '/images/twitter.svg'; ?>"></a>
+			<a href="mailto:isaacjohnrossi@gmail.com"><img class="w-4 md:w-5" src="<?php echo get_template_directory_uri() . '/images/email.svg'; ?>"></a>
 		</div>
 	</div>
 </footer><!-- #colophon -->
