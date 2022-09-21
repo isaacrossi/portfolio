@@ -40,6 +40,10 @@ li:hover .nav-arrow {
 	opacity: 0.80;
 }
 
+a:hover path {
+  fill: #E68333;
+}
+
 /* .project-card:hover .project-text {
 	color: #E68333;
 	border-color: #E68333;
