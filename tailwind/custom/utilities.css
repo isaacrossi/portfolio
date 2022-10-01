@@ -83,5 +83,21 @@ a:hover path {
 	.project-card:nth-child(odd) {
 		align-self: end;
 	}
+
+	.hero-text {
+		font-size: 128px;
+	}
+}
+
+@media(max-width: 600px) {
+	.hero-text {
+		font-size: 100px;
+	}
+}
+
+@media(max-width: 470px) {
+	.hero-text {
+		font-size: 80px;
+	}
 }
 

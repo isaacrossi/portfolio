@@ -10,7 +10,7 @@
           <a href="#blog"><li class="flex justify-between text-xl lg:text-2xl text-light font-body pb-2 pt-2 border-b">Blog<span class="nav-arrow text-accent">↓</span></li></a>
         </ul>
       </nav>
-      <h1 class="absolute text-5xl sm:text-6xl md:text-6xl lg:text-7xl text-light text-center md:text-left leading-3 md:leading-2.5 w-full mx-auto uppercase font-heading tracking-wide absolute bottom-5 md:bottom-20 left-0">Frontend Developer</h1>
+      <h1 class="hero-text absolute text-5xl md:text-6xl lg:text-7xl text-light text-center md:text-left leading-3 md:leading-2.5 w-full mx-auto uppercase font-heading tracking-wide absolute bottom-5 md:bottom-20 left-0">Frontend Developer</h1>
     </div>
 
 
