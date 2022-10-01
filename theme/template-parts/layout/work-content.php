@@ -15,7 +15,7 @@
       </div>
     </div>
 
-    <div class="project-card relative flex flex-col justify-between self-end bg-dark text-light px-4 pb-4 md:pb-6 rounded-tr-4xl md:w-2/5 w-8/12 mt-14 cursor-pointer">
+    <div class="project-card relative flex flex-col justify-between self-end bg-dark text-light px-4 pb-4 md:pb-6 rounded-tr-4xl md:w-2/5 w-8/12 mt-4 md:mt-14 cursor-pointer">
       <a href="https://hungry-noyce-3b3fee.netlify.app/">
         <div class="overlay absolute top-0 left-0 right-0 bottom-0 accent bg-gray-800 opacity-75 w-full h-full z-10 rounded-tr-4xl"><span class="flex items-center h-full justify-center font-bodybold text-accent text-3xl">Live Site<span class="rotate-45 ml-2">↑</span></span>
         </div>

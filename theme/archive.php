@@ -47,7 +47,7 @@ get_template_part( 'template-parts/layout/header', 'content' );
             while ($my_query->have_posts()) : $my_query->the_post(); 
           ?>
             <a href="<?php the_permalink();?>">
-              <div class="blog-posts w-full md:w-4/12 mr-0 md:mr-4 mb-14">
+              <div class="blog-posts w-full md:w-4/12 mr-0 md:pr-4 mb-14">
                 <img class="rounded-tr-4xl" src="<?php the_field("image"); ?>">
                 <p class="text-base text-dark md:text-xl border-b border-dark mt-6 pb-2 font-body"><?php the_tags(''); ?></p>
                 <p class="text-xl text-dark md:text-2xl border-b py-2 font-bodybold border-dark"><?php the_title() ?></p>

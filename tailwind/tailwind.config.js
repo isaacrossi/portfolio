@@ -58,6 +58,9 @@ module.exports = {
 			height: {
         'fit-content': 'fit-content',
       },
+			maxWidth: {
+				'2xl': '40rem',
+			}
 		},
 	},
 	corePlugins: {

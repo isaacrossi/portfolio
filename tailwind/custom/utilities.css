@@ -18,8 +18,10 @@
 
 
 .blog-posts:nth-child(3n) {
-	margin-right: 0px;
+	padding-right: 0px;
 }
+
+
 
 .nav-arrow {
   opacity: 0;
@@ -67,6 +69,8 @@ a:hover path {
 	cursor: -webkit-grabbing;
 }
 
+
+
 @media(min-width: 768px) {
 	.project-card:nth-child(odd) {
 		margin-top: 48px;
@@ -86,6 +90,12 @@ a:hover path {
 
 	.hero-text {
 		font-size: 128px;
+	}
+}
+
+@media(max-width: 670px) {
+	.content-heading {
+		padding-inline: 16px;
 	}
 }
 
