@@ -20,7 +20,7 @@ get_template_part( 'template-parts/layout/header', 'content' );
 
 		<section class="bg-light px-4 md:px-8 lg:px-16 pt-10 pb-14 md:pt-20 md:pb-24">
 
-			<div class="container">
+			<div class="plugin container">
 				<div class="border-b border-dark w-fit-content relative">
 					<h1 class="font-heading text-dark text-5xl md:text-6xl border-b border-dark inline-block leading-none pb-2">All Blog Posts</h1>
 					<div class="py-2">
@@ -56,10 +56,12 @@ get_template_part( 'template-parts/layout/header', 'content' );
 								<p class="text-xl text-dark md:text-2xl border-b py-2 font-bodybold border-dark"><?php the_title() ?></p>
 							</div>         
 						</a>
-						
+
 					<?php 
 					endwhile; endif; 
 					?>
+
+					
 				</div>
 			</div>
 

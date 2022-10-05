@@ -14,7 +14,7 @@ get_template_part( 'template-parts/layout/header', 'content' );
 
     <section class="bg-light px-4 md:px-8 lg:px-16 pt-10 pb-14 md:pt-20 md:pb-24">
 
-      <div class="container">
+      <div class="plugin container">
         <div class="relative border-b border-dark w-fit-content">
           <h1 class="font-heading text-dark text-5xl md:text-6xl border-b border-dark inline-block leading-none pb-2"><?php echo the_tags('') ?></h1>
           <div class="py-2">
@@ -39,7 +39,7 @@ get_template_part( 'template-parts/layout/header', 'content' );
             $first_tag = $tags[0]->term_id;
             $args=array(
             'tag__in' => array($first_tag),
-            'posts_per_page'=>5,
+            'posts_per_page'=>3,
             'caller_get_posts'=>1
             );
             $my_query = new WP_Query($args);
@@ -62,6 +62,8 @@ get_template_part( 'template-parts/layout/header', 'content' );
             
         </div>
       </div>
+
+      <!-- <?php echo do_shortcode('[ajax_load_more post_type="post" posts_per_page="3" category="about" images_loaded="true" scroll="false" progress_bar="true" progress_bar_color="ed7070" no_results_text="No more posts"]'); ?> -->
 
     </section>
   </main><!-- #main -->
